@@ -24,9 +24,8 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
+  srm,
+  stjosephs,
   carrent,
   jobit,
   tripguide,
@@ -126,8 +125,8 @@ const experiences: TExperience[] = [
   {
     title: "M.Tech in Cloud Computing",
     companyName: "SRM University, Chennai",
-    icon: meta,
-    iconBg: "#1d1836",
+    icon: srm,
+    iconBg: "#ffffff",
     date: "2024 – 2026",
     points: [
       "Specialized in AWS cloud architecture (EC2, S3, IAM, CloudWatch, Lambda), distributed systems, and infrastructure monitoring.",
@@ -139,8 +138,8 @@ const experiences: TExperience[] = [
   {
     title: "B.E. in Electronics & Communication",
     companyName: "St. Joseph's College of Engineering, Chennai",
-    icon: tesla,
-    iconBg: "#383E56",
+    icon: stjosephs,
+    iconBg: "#ffffff",
     date: "2020 – 2024",
     points: [
       "Built strong foundational expertise in computer networks (DNS, DHCP, TCP/IP, HTTP/HTTPS, SSL/TLS), Linux systems, and software engineering.",
@@ -149,25 +148,12 @@ const experiences: TExperience[] = [
       "Achieved <500 ms transaction confirmation time with 100% immutability across all test cycles.",
     ],
   },
-  {
-    title: "Cloud Support & Infrastructure Engineering",
-    companyName: "Production & Independent Projects",
-    icon: starbucks,
-    iconBg: "#1d1836",
-    date: "2024 – Present",
-    points: [
-      "Developed automated Bash scripts and cron workflows on Ubuntu Linux to eliminate disk space exhaustion and manage system logs in /var/log.",
-      "Implemented CloudWatch alarms, operational metrics tracking, escalation management, and Root Cause Analysis (RCA) procedures.",
-      "Created infrastructure automation workflows using AWS CloudFormation, Docker containerization, and AWS CLI.",
-      "Authored standard operating procedures (SOPs) and comprehensive architecture documentation for operational reliability.",
-    ],
-  },
 ];
 
 const testimonials: TTestimonial[] = [
   {
     testimonial:
-      "Vignesh's expertise in AWS cloud services, Linux administration, and automated backup pipelines makes him an exceptional Cloud Operations engineer.",
+      "Vignesh's expertise in AWS cloud services, Linux administration, and automated backup pipelines makes him an exceptional candidate for cloud operations.",
     name: "Cloud Architect",
     designation: "Technical Mentor",
     company: "AWS Community",

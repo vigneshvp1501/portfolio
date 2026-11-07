@@ -40,14 +40,14 @@ type TConfig = {
 
 export const config: TConfig = {
   html: {
-    title: "Vignesh P — Cloud Operations Engineer | 3D Portfolio",
+    title: "Vignesh P — Cloud Support Associate | 3D Portfolio",
     fullName: "Vignesh P",
     email: "vigneshvp1501@gmail.com",
   },
   hero: {
     name: "Vignesh P",
     p: [
-      "Cloud Operations Engineer | AWS Cloud",
+      "Cloud Support Associate | AWS Cloud",
       "Infrastructure Monitoring & Linux Administration",
     ],
   },
@@ -70,11 +70,11 @@ export const config: TConfig = {
     about: {
       p: "Introduction",
       h2: "Overview.",
-      content: `M.Tech Cloud Computing graduate with hands-on project experience in AWS (EC2, S3, IAM, CloudWatch), Linux administration, Docker, Python, and Bash scripting. Built real infrastructure projects involving automated monitoring, incident alerting, predictive auto-scaling, and cloud backup pipelines — looking to apply that foundation in a cloud operations role.`,
+      content: `M.Tech Cloud Computing graduate with hands-on project experience in AWS (EC2, S3, IAM, CloudWatch), Linux administration, Docker, Python, and Bash scripting. Built real infrastructure projects involving automated monitoring, incident alerting, predictive auto-scaling, and cloud backup pipelines — looking to apply that foundation in a cloud operations & support role.`,
     },
     experience: {
-      p: "My Education & Experience",
-      h2: "Experience & Education.",
+      p: "My Academic Background",
+      h2: "Education.",
     },
     feedbacks: {
       p: "Recommendations & Feedback",

@@ -21,6 +21,8 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
+import srm from "./company/srm.jpg";
+import stjosephs from "./company/stjosephs.png";
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
@@ -52,6 +54,8 @@ export {
   tailwind,
   typescript,
   threejs,
+  srm,
+  stjosephs,
   meta,
   shopify,
   starbucks,

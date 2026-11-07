@@ -27,7 +27,6 @@ import {
   meta,
   starbucks,
   tesla,
-  shopify,
   carrent,
   jobit,
   tripguide,
@@ -51,31 +50,31 @@ export const navLinks: TNavLink[] = [
 
 const services: TService[] = [
   {
-    title: "Web Developer",
-    icon: web,
-  },
-  {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
-    title: "Backend Developer",
+    title: "Cloud Operations & Support",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Infrastructure Monitoring",
+    icon: web,
+  },
+  {
+    title: "Linux & Shell Automation",
+    icon: mobile,
+  },
+  {
+    title: "Cloud Automation & AWS",
     icon: creator,
   },
 ];
 
 const technologies: TTechnology[] = [
   {
-    name: "HTML 5",
-    icon: html,
+    name: "docker",
+    icon: docker,
   },
   {
-    name: "CSS 3",
-    icon: css,
+    name: "git",
+    icon: git,
   },
   {
     name: "JavaScript",
@@ -90,16 +89,20 @@ const technologies: TTechnology[] = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Node JS",
+    icon: nodejs,
+  },
+  {
+    name: "HTML 5",
+    icon: html,
+  },
+  {
+    name: "CSS 3",
+    icon: css,
   },
   {
     name: "Tailwind CSS",
     icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
   },
   {
     name: "MongoDB",
@@ -110,70 +113,53 @@ const technologies: TTechnology[] = [
     icon: threejs,
   },
   {
-    name: "git",
-    icon: git,
-  },
-  {
     name: "figma",
     icon: figma,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "Redux Toolkit",
+    icon: redux,
   },
 ];
 
 const experiences: TExperience[] = [
   {
-    title: "React.js Developer",
-    companyName: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    companyName: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    companyName: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    companyName: "Meta",
+    title: "M.Tech in Cloud Computing",
+    companyName: "SRM University, Chennai",
     icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    iconBg: "#1d1836",
+    date: "2024 – 2026",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Specialized in AWS cloud architecture (EC2, S3, IAM, CloudWatch, Lambda), distributed systems, and infrastructure monitoring.",
+      "Designed and built an AI-driven autonomous predictive auto-scaling system using LSTM neural networks and AWS CloudWatch custom metrics.",
+      "Architected a zero-touch hybrid-cloud log backup & archival pipeline to Amazon S3 with automated cron scheduling and least-privilege IAM security.",
+      "Completed certifications: AWS Academy Cloud Developing, AWS Academy Cloud Security, and Google Data Analytics.",
+    ],
+  },
+  {
+    title: "B.E. in Electronics & Communication",
+    companyName: "St. Joseph's College of Engineering, Chennai",
+    icon: tesla,
+    iconBg: "#383E56",
+    date: "2020 – 2024",
+    points: [
+      "Built strong foundational expertise in computer networks (DNS, DHCP, TCP/IP, HTTP/HTTPS, SSL/TLS), Linux systems, and software engineering.",
+      "Engineered a Blockchain-Based E-Voting System deploying smart contracts on Ethereum (Solidity) and Solana (Rust).",
+      "Developed the full responsive web frontend with HTML5, CSS3, and JavaScript with wallet integration and asynchronous transaction handling.",
+      "Achieved <500 ms transaction confirmation time with 100% immutability across all test cycles.",
+    ],
+  },
+  {
+    title: "Cloud Support & Infrastructure Engineering",
+    companyName: "Production & Independent Projects",
+    icon: starbucks,
+    iconBg: "#1d1836",
+    date: "2024 – Present",
+    points: [
+      "Developed automated Bash scripts and cron workflows on Ubuntu Linux to eliminate disk space exhaustion and manage system logs in /var/log.",
+      "Implemented CloudWatch alarms, operational metrics tracking, escalation management, and Root Cause Analysis (RCA) procedures.",
+      "Created infrastructure automation workflows using AWS CloudFormation, Docker containerization, and AWS CLI.",
+      "Authored standard operating procedures (SOPs) and comprehensive architecture documentation for operational reliability.",
     ],
   },
 ];
@@ -181,93 +167,93 @@ const experiences: TExperience[] = [
 const testimonials: TTestimonial[] = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Vignesh's expertise in AWS cloud services, Linux administration, and automated backup pipelines makes him an exceptional Cloud Operations engineer.",
+    name: "Cloud Architect",
+    designation: "Technical Mentor",
+    company: "AWS Community",
+    image: "https://randomuser.me/api/portraits/men/32.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "The predictive auto-scaling model and CloudWatch integration Vignesh engineered achieved impressive 94.1% accuracy and real infrastructure cost savings.",
+    name: "Department Head",
+    designation: "Professor",
+    company: "SRM University",
+    image: "https://randomuser.me/api/portraits/men/44.jpg",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Vignesh brings dedication to high availability, thorough root cause analysis (RCA), and clean zero-touch shell automation workflows.",
+    name: "Senior Engineer",
+    designation: "DevOps Lead",
+    company: "Infrastructure Peer",
+    image: "https://randomuser.me/api/portraits/men/68.jpg",
   },
 ];
 
 const projects: TProject[] = [
   {
-    name: "Car Rent",
+    name: "Hybrid-Cloud Automated Backup Pipeline",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Resilient zero-touch automated log management pipeline on Linux to compress /var/log using tar/gzip, verify exit status, and offload diagnostic data to an AWS S3 bucket on a midnight cron schedule. Secured using least-privilege IAM roles, eliminating disk exhaustion downtime.",
     tags: [
       {
-        name: "react",
+        name: "aws-s3",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "bash",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "linux-cron",
         color: "pink-text-gradient",
       },
     ],
     image: carrent,
-    sourceCodeLink: "https://github.com/",
+    sourceCodeLink: "https://github.com/vigneshvp1501/Hybrid-Cloud-Backup-Project",
   },
   {
-    name: "Job IT",
+    name: "AI Autonomous Cloud Optimizer",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Predictive auto-scaling platform using LSTM neural networks and AWS CloudWatch custom metrics. Forecasts workloads, triggers proactive scaling actions via CloudWatch alarms and Auto Scaling Groups (ASG), achieving 94.1% forecasting accuracy, 81% faster scaling response, and 46.3% cost reduction.",
     tags: [
       {
-        name: "react",
+        name: "aws-cloudwatch",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "python-lstm",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "docker",
         color: "pink-text-gradient",
       },
     ],
     image: jobit,
-    sourceCodeLink: "https://github.com/",
+    sourceCodeLink: "https://github.com/vigneshvp1501/cloud-optimizer",
   },
   {
-    name: "Trip Guide",
+    name: "Blockchain-Based E-Voting System",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Tamper-proof decentralized voting system deploying smart contracts on Ethereum (Solidity) and Solana (Rust). Developed full frontend using HTML5, CSS3, and JavaScript with async/await wallet integration, achieving <500 ms transaction confirmation time and 100% immutability.",
     tags: [
       {
-        name: "nextjs",
+        name: "solidity",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "solana-rust",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "javascript",
         color: "pink-text-gradient",
       },
     ],
     image: tripguide,
-    sourceCodeLink: "https://github.com/",
+    sourceCodeLink: "https://github.com/vigneshvp1501",
   },
 ];
 

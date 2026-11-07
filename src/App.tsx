@@ -22,7 +22,7 @@ const App = () => {
   }, []);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <div className="bg-primary relative z-0">
         <div className="bg-hero-pattern bg-cover bg-center bg-no-repeat">
           <Navbar />

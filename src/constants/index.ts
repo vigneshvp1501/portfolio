@@ -51,51 +51,43 @@ export const navLinks: TNavLink[] = [
 
 const services: TService[] = [
   {
-    title: "Web Developer",
-    icon: web,
-  },
-  {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
-    title: "Backend Developer",
+    title: "Cloud & DevOps Engineer",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "AWS Infrastructure Specialist",
+    icon: web,
+  },
+  {
+    title: "Full-Stack Developer",
     icon: creator,
+  },
+  {
+    title: "CI/CD & Automation Architect",
+    icon: mobile,
   },
 ];
 
 const technologies: TTechnology[] = [
   {
-    name: "HTML 5",
-    icon: html,
+    name: "docker",
+    icon: docker,
   },
   {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
+    name: "git",
+    icon: git,
   },
   {
     name: "React JS",
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "TypeScript",
+    icon: typescript,
   },
   {
-    name: "Tailwind CSS",
-    icon: tailwind,
+    name: "JavaScript",
+    icon: javascript,
   },
   {
     name: "Node JS",
@@ -106,74 +98,82 @@ const technologies: TTechnology[] = [
     icon: mongodb,
   },
   {
+    name: "Tailwind CSS",
+    icon: tailwind,
+  },
+  {
     name: "Three JS",
     icon: threejs,
   },
   {
-    name: "git",
-    icon: git,
+    name: "HTML 5",
+    icon: html,
+  },
+  {
+    name: "CSS 3",
+    icon: css,
+  },
+  {
+    name: "Redux Toolkit",
+    icon: redux,
   },
   {
     name: "figma",
     icon: figma,
   },
-  {
-    name: "docker",
-    icon: docker,
-  },
 ];
 
 const experiences: TExperience[] = [
   {
-    title: "React.js Developer",
-    companyName: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "M.Tech in Cloud Computing",
+    companyName: "Master's Degree",
+    icon: meta,
+    iconBg: "#1d1836",
+    date: "2024 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Specializing in Cloud Architecture, Distributed Systems, Containerization, and DevOps workflows.",
+      "Developing production-simulation CloudOps pipelines with Terraform, Ansible, Jenkins, and Prometheus.",
+      "Researching predictive auto-scaling and intelligent cloud cost optimization using machine learning models.",
+      "Architecting resilient multi-tier and hybrid cloud infrastructures on AWS.",
     ],
   },
   {
-    title: "React Native Developer",
-    companyName: "Tesla",
+    title: "CloudOps & DevOps Engineer",
+    companyName: "CloudOps Automation Platform",
     icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    iconBg: "#383E56",
+    date: "2025 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Engineered an automated SaaS CloudOps platform utilizing Docker CE, Docker Compose, and Jenkins CI/CD.",
+      "Implemented Infrastructure as Code (IaC) with Terraform for automated cloud provisioning.",
+      "Configured comprehensive observability with Prometheus, Grafana dashboards, and automated alert routing.",
+      "Automated configuration management and disaster recovery backup routines with Ansible and Bash.",
     ],
   },
   {
-    title: "Web Developer",
-    companyName: "Shopify",
+    title: "Cloud Optimization Architect",
+    companyName: "AI Cloud Resource Optimizer",
+    icon: starbucks,
+    iconBg: "#1d1836",
+    date: "2025 - 2026",
+    points: [
+      "Designed predictive auto-scaling engine using a containerized LSTM neural network for AWS Auto Scaling Groups.",
+      "Streamed EC2 metrics and published predicted workload metrics directly into AWS CloudWatch custom namespaces.",
+      "Implemented intelligent cooldown logic and real-time cost-impact logging for elastic cloud clusters.",
+      "Automated full cloud stack deployment with AWS CloudFormation templates.",
+    ],
+  },
+  {
+    title: "Full-Stack Developer",
+    companyName: "Software Projects",
     icon: shopify,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "2024 - 2025",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    companyName: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed full-stack web applications integrating React, TypeScript, Node.js, and RESTful APIs.",
+      "Architected relational and document databases with PostgreSQL and MongoDB for low-latency queries.",
+      "Built automated data pipelines, browser automation workflows, and internal productivity tools.",
+      "Practiced agile development with Git version control, pull requests, and automated deployment.",
     ],
   },
 ];
@@ -181,93 +181,93 @@ const experiences: TExperience[] = [
 const testimonials: TTestimonial[] = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Vignesh's deep understanding of AWS, containerization, and automated CI/CD pipelines makes him an invaluable Cloud & DevOps engineer.",
+    name: "DevOps Peer",
+    designation: "Cloud Engineer",
+    company: "Cloud Community",
+    image: "https://randomuser.me/api/portraits/men/32.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "The CloudOps platform and predictive auto-scaling models Vignesh built show exceptional problem-solving and systems architecture skills.",
+    name: "Project Collaborator",
+    designation: "Full Stack Engineer",
+    company: "Open Source Contributor",
+    image: "https://randomuser.me/api/portraits/men/44.jpg",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Reliable, detail-oriented, and constantly pushing forward with production-grade cloud and automation best practices.",
+    name: "Academic Mentor",
+    designation: "Professor",
+    company: "SRM / Cloud Computing Dept",
+    image: "https://randomuser.me/api/portraits/men/68.jpg",
   },
 ];
 
 const projects: TProject[] = [
   {
-    name: "Car Rent",
+    name: "CloudOps Automation Platform",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Industry-grade CloudOps platform featuring incident management, Jenkins CI/CD pipeline, Docker container orchestration, Prometheus & Grafana monitoring, Terraform IaC, and Ansible configuration.",
     tags: [
       {
-        name: "react",
+        name: "docker",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "terraform",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "jenkins",
         color: "pink-text-gradient",
       },
     ],
     image: carrent,
-    sourceCodeLink: "https://github.com/",
+    sourceCodeLink: "https://github.com/vigneshvp1501/cloudops-automation-platform",
   },
   {
-    name: "Job IT",
+    name: "AI Cloud Resource Optimizer",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Predictive auto-scaling system using Dockerized LSTM neural network model, AWS CloudWatch custom metrics, and Auto Scaling Groups (ASG) to optimize cloud cost and prevent performance degradation.",
     tags: [
       {
-        name: "react",
+        name: "aws",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "python-lstm",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "cloudwatch",
         color: "pink-text-gradient",
       },
     ],
     image: jobit,
-    sourceCodeLink: "https://github.com/",
+    sourceCodeLink: "https://github.com/vigneshvp1501/cloud-optimizer",
   },
   {
-    name: "Trip Guide",
+    name: "Hybrid Cloud Backup System",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Automated disaster recovery and system log archival pipeline transferring system logs (/var/log) from local Linux servers to AWS S3 bucket using shell scripting and crontab automation.",
     tags: [
       {
-        name: "nextjs",
+        name: "aws-s3",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "bash",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "crontab",
         color: "pink-text-gradient",
       },
     ],
     image: tripguide,
-    sourceCodeLink: "https://github.com/",
+    sourceCodeLink: "https://github.com/vigneshvp1501/Hybrid-Cloud-Backup-Project",
   },
 ];
 

@@ -40,13 +40,13 @@ type TConfig = {
 
 export const config: TConfig = {
   html: {
-    title: "Vignesh — 3D Portfolio",
-    fullName: "Vignesh",
+    title: "Vignesh V P — Cloud & DevOps Engineer | 3D Portfolio",
+    fullName: "Vignesh V P",
     email: "vigneshvp1501@gmail.com",
   },
   hero: {
     name: "Vignesh",
-    p: ["I develop 3D visuals, user", "interfaces and web applications"],
+    p: ["I build cloud infrastructure, CI/CD pipelines,", "and scalable web applications"],
   },
   contact: {
     p: "Get in touch",
@@ -67,28 +67,20 @@ export const config: TConfig = {
     about: {
       p: "Introduction",
       h2: "Overview.",
-      content: `I'm a skilled software developer with experience in TypeScript and
-      JavaScript, and expertise in frameworks like React, Node.js, and
-      Three.js. I'm a quick learner and collaborate closely with clients to
-      create efficient, scalable, and user-friendly solutions that solve
-      real-world problems. Let's work together to bring your ideas to life!`,
+      content: `I am an M.Tech Cloud Computing student and aspiring DevOps / Cloud Engineer with hands-on experience across AWS, Docker, Linux, Terraform, Python, and Full-Stack engineering. I specialize in architecting automated CI/CD pipelines, container orchestration, predictive cloud resource optimization, and resilient cloud architectures. Let's build scalable, production-grade systems!`,
     },
     experience: {
-      p: "What I have done so far",
-      h2: "Work Experience.",
+      p: "My journey & academic background",
+      h2: "Experience & Education.",
     },
     feedbacks: {
-      p: "What others say",
+      p: "What collaborators say",
       h2: "Testimonials.",
     },
     works: {
       p: "My work",
       h2: "Projects.",
-      content: `Following projects showcases my skills and experience through
-    real-world examples of my work. Each project is briefly described with
-    links to code repositories and live demos in it. It reflects my
-    ability to solve complex problems, work with different technologies,
-    and manage projects effectively.`,
+      content: `The following projects showcase my expertise in CloudOps platforms, AI-driven cloud resource optimization, and automated infrastructure pipelines. Each project is linked directly to its GitHub repository with complete source code and architecture diagrams.`,
     },
   },
 };

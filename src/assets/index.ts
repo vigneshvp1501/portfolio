@@ -21,7 +21,7 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import srm from "./company/srm.jpg";
+import srm from "./company/srm.png";
 import stjosephs from "./company/stjosephs.png";
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";

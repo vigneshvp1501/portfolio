@@ -23,11 +23,11 @@ const ExperienceCard: React.FC<TExperience> = (experience) => {
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
-        <div className="flex h-full w-full items-center justify-center">
+        <div className="flex h-full w-full items-center justify-center overflow-hidden rounded-full">
           <img
             src={experience.icon}
             alt={experience.companyName}
-            className="h-[80%] w-[80%] object-contain rounded-full"
+            className="h-full w-full object-cover rounded-full"
           />
         </div>
       }

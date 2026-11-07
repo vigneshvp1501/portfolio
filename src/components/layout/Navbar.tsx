@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 
 import { styles } from "../../constants/styles";
 import { navLinks } from "../../constants";
@@ -57,10 +56,11 @@ const Navbar = () => {
       }`}
     >
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between">
-        <Link
-          to="/"
+        <a
+          href="#"
           className="flex items-center gap-2"
-          onClick={() => {
+          onClick={(e) => {
+            e.preventDefault();
             window.scrollTo(0, 0);
           }}
         >
@@ -68,7 +68,7 @@ const Navbar = () => {
           <p className="flex cursor-pointer text-[18px] font-bold text-white ">
             {config.html.title}
           </p>
-        </Link>
+        </a>
 
         <ul className="hidden list-none flex-row gap-10 sm:flex">
           {navLinks.map((nav) => (

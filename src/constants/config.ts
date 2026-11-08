@@ -40,15 +40,15 @@ type TConfig = {
 
 export const config: TConfig = {
   html: {
-    title: "Vignesh P — Cloud Support Associate | 3D Portfolio",
+    title: "Cloud & DevOps Engineer | AWS | Linux | Docker | Python | Infrastructure Automation",
     fullName: "Vignesh P",
     email: "vigneshvp1501@gmail.com",
   },
   hero: {
     name: "Vignesh P",
     p: [
-      "Cloud Support Associate | AWS Cloud",
-      "Infrastructure Monitoring & Linux Administration",
+      "Cloud & DevOps Engineer | AWS | Linux |",
+      "Docker | Python | Infrastructure Automation",
     ],
   },
   contact: {

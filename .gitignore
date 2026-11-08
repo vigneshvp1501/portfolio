@@ -30,4 +30,6 @@ dist-ssr
 .env
 
 .playwright-mcp
+.agents
+
 

@@ -11,6 +11,7 @@ import Footer from "./layout/Footer";
 import About from "./sections/About";
 import Tech from "./sections/Tech";
 import Experience from "./sections/Experience";
+import Internship from "./sections/Internship";
 import Works from "./sections/Works";
 import Feedbacks from "./sections/Feedbacks";
 import Contact from "./sections/Contact";
@@ -23,6 +24,7 @@ export {
   About,
   Tech,
   Experience,
+  Internship,
   Works,
   Feedbacks,
   Contact,

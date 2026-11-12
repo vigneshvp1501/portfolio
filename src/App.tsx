@@ -2,6 +2,7 @@ import {
   About,
   Contact,
   Experience,
+  Internship,
   Hero,
   Navbar,
   Tech,
@@ -27,6 +28,7 @@ const App = () => {
       </div>
       <About />
       <Experience />
+      <Internship />
       <Tech />
       <Works />
       <div className="relative z-0">

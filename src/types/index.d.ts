@@ -11,6 +11,15 @@ export type TExperience = {
   points: string[];
 } & Required<Omit<TCommonProps, "name">>;
 
+export type TInternship = {
+  title: string;
+  companyName: string;
+  iconBg?: string;
+  icon?: string;
+  date: string;
+  points: string[];
+};
+
 export type TTestimonial = {
   testimonial: string;
   designation: string;

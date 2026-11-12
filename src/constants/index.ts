@@ -3,6 +3,7 @@ import type {
   TService,
   TTechnology,
   TExperience,
+  TInternship,
   TTestimonial,
   TProject,
 } from "../types";
@@ -40,6 +41,10 @@ export const navLinks: TNavLink[] = [
   {
     id: "work",
     title: "Work",
+  },
+  {
+    id: "internship",
+    title: "Internship",
   },
   {
     id: "contact",
@@ -243,4 +248,6 @@ const projects: TProject[] = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const internships: TInternship[] = [];
+
+export { services, technologies, experiences, internships, testimonials, projects };

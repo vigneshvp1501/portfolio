@@ -245,17 +245,17 @@ const Contact = () => {
 
   return (
     <div
-      className={`flex flex-col-reverse gap-10 overflow-hidden xl:mt-12 xl:flex-row`}
+      className={`flex flex-col-reverse gap-8 overflow-hidden xl:mt-4 xl:flex-row xl:items-stretch`}
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className="bg-black-100 flex-[0.75] rounded-2xl p-8"
+        className="bg-black-100 flex-1 rounded-2xl p-6 sm:p-7"
       >
         <Header useMotion={false} {...config.contact} />
 
         {/* Professional Contact Information */}
-        <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
-          {contactCards.map((card) => (
+        <div className="mt-4 grid grid-cols-1 gap-2.5 sm:grid-cols-2">
+          {contactCards.map((card, idx) => (
             <a
               key={card.title}
               href={card.href}
@@ -263,27 +263,29 @@ const Contact = () => {
               rel={card.target ? "noopener noreferrer" : undefined}
               aria-label={card.ariaLabel}
               title={`${card.title}: ${card.value}`}
-              className="group flex flex-col justify-center rounded-xl border border-white/5 bg-tertiary/70 p-3 sm:p-3.5 transition-all duration-300 hover:border-[#915EFF]/60 hover:bg-tertiary hover:shadow-[0_0_20px_rgba(145,94,255,0.2)]"
+              className={`group flex items-center gap-2.5 rounded-xl border border-white/5 bg-tertiary/70 px-3 py-2 sm:px-3.5 sm:py-2.5 transition-all duration-300 hover:border-[#915EFF]/60 hover:bg-tertiary hover:shadow-[0_0_15px_rgba(145,94,255,0.2)] ${
+                idx === 0 ? "sm:col-span-2" : ""
+              }`}
             >
-              <div className="mb-2 flex items-center gap-2.5">
-                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-[#915EFF]/25 bg-[#915EFF]/10 text-[#915EFF] transition-colors duration-300 group-hover:border-[#915EFF] group-hover:bg-[#915EFF] group-hover:text-white">
-                  {card.icon}
-                </div>
-                <span className="text-[11px] font-semibold uppercase tracking-wider text-secondary">
+              <div className="flex h-7 w-7 sm:h-8 sm:w-8 shrink-0 items-center justify-center rounded-lg border border-[#915EFF]/25 bg-[#915EFF]/10 text-[#915EFF] transition-colors duration-300 group-hover:border-[#915EFF] group-hover:bg-[#915EFF] group-hover:text-white">
+                {card.icon}
+              </div>
+              <div className="flex flex-col min-w-0">
+                <span className="text-[10px] font-semibold uppercase tracking-wider text-secondary leading-tight">
                   {card.title}
                 </span>
+                <span className="truncate text-[11px] sm:text-[12.5px] font-medium text-white transition-colors duration-300 group-hover:text-[#915EFF] leading-tight mt-0.5">
+                  {card.value}
+                </span>
               </div>
-              <span className="truncate text-[12px] sm:text-[13px] font-medium text-white transition-colors duration-300 group-hover:text-[#915EFF]">
-                {card.value}
-              </span>
             </a>
           ))}
         </div>
 
         {/* Subtle Separator */}
-        <div className="relative my-7 flex items-center justify-center">
+        <div className="relative my-4 flex items-center justify-center">
           <div className="grow border-t border-white/10"></div>
-          <span className="mx-3 shrink-0 text-center text-[11px] sm:text-[12px] font-medium uppercase tracking-wider text-secondary whitespace-nowrap">
+          <span className="mx-3 shrink-0 text-center text-[10.5px] sm:text-[11px] font-medium uppercase tracking-wider text-secondary whitespace-nowrap">
             Or send a message directly
           </span>
           <div className="grow border-t border-white/10"></div>
@@ -293,7 +295,7 @@ const Contact = () => {
           // @ts-expect-error
           ref={formRef}
           onSubmit={handleSubmit}
-          className="flex flex-col gap-8"
+          className="flex flex-col gap-4"
         >
           {Object.keys(config.contact.form).map((input) => {
             const { span, placeholder } =
@@ -302,15 +304,15 @@ const Contact = () => {
 
             return (
               <label key={input} className="flex flex-col">
-                <span className="mb-4 font-medium text-white">{span}</span>
+                <span className="mb-1.5 text-[13px] sm:text-[14px] font-medium text-white">{span}</span>
                 <Component
                   type={input === "email" ? "email" : "text"}
                   name={input}
                   value={form[`${input}`]}
                   onChange={handleChange}
                   placeholder={placeholder}
-                  className="bg-tertiary placeholder:text-secondary rounded-lg border-none px-6 py-4 font-medium text-white outline-none"
-                  {...(input === "message" && { rows: 7 })}
+                  className="bg-tertiary placeholder:text-secondary rounded-lg border border-transparent focus:border-[#915EFF]/50 px-4 py-2.5 sm:py-3 text-[14px] font-medium text-white outline-none transition-colors"
+                  {...(input === "message" && { rows: 4 })}
                 />
               </label>
             );
@@ -318,7 +320,7 @@ const Contact = () => {
 
           {status.message && (
             <div
-              className={`p-4 rounded-xl text-sm font-medium ${
+              className={`p-3 rounded-lg text-xs sm:text-sm font-medium ${
                 status.type === "success"
                   ? "bg-green-900/60 text-green-200 border border-green-500/30"
                   : status.type === "info"
@@ -330,17 +332,17 @@ const Contact = () => {
             </div>
           )}
 
-          <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-3 pt-1">
             <button
               type="submit"
               disabled={loading}
-              className="bg-tertiary shadow-primary w-fit rounded-xl px-8 py-3 font-bold text-white shadow-md outline-none hover:bg-[#915EFF] transition-colors disabled:opacity-50"
+              className="bg-tertiary shadow-primary w-fit rounded-xl px-6 py-2.5 text-[14px] font-bold text-white shadow-md outline-none hover:bg-[#915EFF] transition-colors disabled:opacity-50"
             >
               {loading ? "Sending..." : "Send Message"}
             </button>
             <a
               href={`mailto:${config.html.email}`}
-              className="text-secondary hover:text-white text-[14px] flex items-center gap-2 underline underline-offset-4"
+              className="text-secondary hover:text-white text-[13px] sm:text-[14px] flex items-center gap-2 underline underline-offset-4"
             >
               Or email directly: {config.html.email}
             </a>
@@ -350,7 +352,7 @@ const Contact = () => {
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className="h-[350px] md:h-[550px] xl:h-auto xl:flex-1"
+        className="h-[260px] sm:h-[320px] md:h-[380px] xl:h-auto xl:flex-1 mx-auto w-full max-w-[500px] xl:max-w-none"
       >
         <EarthCanvas />
       </motion.div>

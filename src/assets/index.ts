@@ -31,6 +31,9 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import backup_pipeline from "./backup_pipeline.png";
+import cloud_optimizer from "./cloud_optimizer.png";
+import evoting_blockchain from "./evoting_blockchain.png";
 
 export {
   logo,
@@ -63,4 +66,7 @@ export {
   carrent,
   jobit,
   tripguide,
+  backup_pipeline,
+  cloud_optimizer,
+  evoting_blockchain,
 };

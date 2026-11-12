@@ -26,9 +26,9 @@ import {
   docker,
   srm,
   stjosephs,
-  carrent,
-  jobit,
-  tripguide,
+  backup_pipeline,
+  cloud_optimizer,
+  evoting_blockchain,
   threejs,
 } from "../assets";
 
@@ -196,7 +196,7 @@ const projects: TProject[] = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: backup_pipeline,
     sourceCodeLink: "https://github.com/vigneshvp1501/Hybrid-Cloud-Backup-Project",
   },
   {
@@ -217,7 +217,7 @@ const projects: TProject[] = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: cloud_optimizer,
     sourceCodeLink: "https://github.com/vigneshvp1501/cloud-optimizer",
   },
   {
@@ -238,7 +238,7 @@ const projects: TProject[] = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: evoting_blockchain,
     sourceCodeLink: "https://github.com/vigneshvp1501",
   },
 ];

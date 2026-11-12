@@ -36,7 +36,9 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
             <div className="card-img_hover absolute inset-0 m-3 flex justify-end">
               <div
                 onClick={() => window.open(sourceCodeLink, "_blank")}
-                className="black-gradient flex h-10 w-10 cursor-pointer items-center justify-center rounded-full"
+                title="View GitHub Repository"
+                aria-label="View source code on GitHub"
+                className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border border-white/20 bg-black/70 backdrop-blur-md transition-all duration-300 hover:bg-[#915EFF] hover:border-[#915EFF] hover:shadow-[0_0_15px_rgba(145,94,255,0.6)] hover:scale-110"
               >
                 <img
                   src={github}

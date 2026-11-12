@@ -65,12 +65,15 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt="logo" className="h-9 w-9 object-contain" />
-          <p className="flex cursor-pointer text-[18px] font-bold text-white ">
-            {config.html.title}
+          <p className="flex cursor-pointer text-[18px] font-bold text-white items-center gap-2">
+            <span>{config.hero.name}</span>
+            <span className="hidden md:inline text-secondary text-[14px] font-normal">
+              | Cloud & DevOps
+            </span>
           </p>
         </a>
 
-        <ul className="hidden list-none flex-row gap-10 sm:flex">
+        <ul className="hidden list-none flex-row items-center gap-8 sm:flex">
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -81,6 +84,20 @@ const Navbar = () => {
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
+          <li>
+            <a
+              href="https://www.linkedin.com/in/vigneshvp1501/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Connect on LinkedIn"
+              className="flex items-center gap-1.5 rounded-lg border border-[#0A66C2]/40 bg-[#0A66C2]/15 px-3 py-1.5 text-[14px] font-semibold text-white transition-all duration-300 hover:bg-[#0A66C2] hover:shadow-[0_0_15px_rgba(10,102,194,0.4)]"
+            >
+              <svg className="h-3.5 w-3.5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.6 1.6 0 1 0-.01-3.2 1.6 1.6 0 0 0 .01 3.2m1.4 9.74v-8.37H5.06v8.37z" />
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+          </li>
         </ul>
 
         <div className="flex flex-1 items-center justify-end sm:hidden">
@@ -110,6 +127,16 @@ const Navbar = () => {
                   <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/vigneshvp1501/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 font-poppins text-[16px] font-medium text-[#0A66C2] hover:underline"
+                >
+                  LinkedIn ↗
+                </a>
+              </li>
             </ul>
           </div>
         </div>
